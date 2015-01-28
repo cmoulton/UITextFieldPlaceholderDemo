@@ -78,10 +78,15 @@ class ViewController: UIViewController, UITextViewDelegate {
     let newLength = textView.text.utf16Count + text.utf16Count - range.length
     if newLength > 0 // have text, so don't show the placeholder
     {
-      applyNonPlaceholderStyle(textView)
       // check if the only text is the placeholder and remove it if needed
+      // unless they've hit the delete button with the placeholder displayed
       if textView == nameTextView && textView.text == PLACEHOLDER_TEXT
       {
+        if text.utf16Count == 0 // they hit the back button
+        {
+          return false // ignore it
+        }
+        applyNonPlaceholderStyle(textView)
         textView.text = ""
       }
       return true
