@@ -75,14 +75,14 @@ class ViewController: UIViewController, UITextViewDelegate {
     // if it's not empty, then the text should be black and not italic
     // BUT, we also need to remove the placeholder text if that's the only text
     // if it is empty, then the text should be the placeholder
-    let newLength = textView.text.utf16Count + text.utf16Count - range.length
+    let newLength = count("textView.text".utf16) + count(text.utf16) - range.length
     if newLength > 0 // have text, so don't show the placeholder
     {
       // check if the only text is the placeholder and remove it if needed
       // unless they've hit the delete button with the placeholder displayed
       if textView == nameTextView && textView.text == PLACEHOLDER_TEXT
       {
-        if text.utf16Count == 0 // they hit the back button
+        if count(text.utf16) == 0 // they hit the back button
         {
           return false // ignore it
         }
