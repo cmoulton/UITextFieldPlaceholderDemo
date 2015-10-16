@@ -156,6 +156,8 @@
 		CF55DBFB1A77E05900EE4AAD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Teak Mobile Inc";
 				TargetAttributes = {
@@ -405,6 +407,7 @@
 				CF55DC241A77E05900EE4AAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF55DC251A77E05900EE4AAD /* Build configuration list for PBXNativeTarget "UITextFieldPlaceholderDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +416,7 @@
 				CF55DC271A77E05900EE4AAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
